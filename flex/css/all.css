@@ -1,0 +1,289 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/**********************以上是CSS RESET********************/
+
+body{
+    color:#3F5D45;
+
+}
+a{text-decoration:none; color: #3F5D45;}
+li{list-style:none;}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.container{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu a{padding: 10px 30px 8px; font-weight: bold;}
+
+.menu a:hover{background: #3F5D45; color:#FFF;}
+
+.banner{margin-bottom: 60px;}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.aside{width: 300px;}
+
+.product-list{width: 620px;}
+
+.aside h2{
+    line-height: 65px;
+    font-size: 24px;
+    background-color: #3F5D45;
+    color:#EAF0ED;
+    text-align: center;
+}
+
+.aside a{
+    display: block;
+    line-height: 65px;
+    color:#3F5D45;
+    border: 1px solid #EAF0ED;
+    text-align: center;
+    font-size: 24px;
+}
+
+.aside a:hover{background: #EAF0ED;}
+
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product > li{
+    width: 300px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.product .tag{
+    background: #3F5D45;
+    color:#EAF0ED;
+    writing-mode: vertical-lr; /*文字直向*/
+    letter-spacing: 5px; /*文字間距*/
+    position: absolute;
+    left: 20px;
+    top:0px;
+    padding: 0px;
+    padding: 10px;
+}
+
+.product .heart{
+    position: absolute;
+    top:20px;
+    right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.detail{
+    display: flex;
+    border-left: 1px solid #EAF0ED;
+    border-right: 1px solid #EAF0ED;
+    font-size: 20px;
+    line-height: 56px;
+    text-align: center;
+}
+
+.detail > h2{
+    width: 173px;
+    border-right: 1px solid #EAF0ED;
+}
+
+.detail > span{
+    width: 127px;
+    font-weight: bold;
+}
+
+.product .cart{
+    display: block;
+    line-height: 65px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #EAF0ED;
+    border: 1xp solid #EAF0ED;
+    color:#3F5D45;
+    text-align: center;
+}
+
+
+.page{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 60px;
+}
+
+.page ul{
+    display: flex;
+    border: 1px solid #EAF0ED;
+}
+
+.page li{
+    width: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    border-right: 1px solid #EAF0ED;
+}
+
+.page li:hover{background-color: #3F5D45; color:#EAF0ED;}
+
+.page img{border: 1px solid #EAF0ED;}
+
+
+.greenbg{
+    height: 116px;
+    background: #3F5D45;
+}
+
+.container2{
+    width: 840px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mail{
+    padding: 30px 0px;
+}
+
+.mail > .left{
+    color:#EAF0ED;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.left img{margin-right: 20px;}
+
+.mail > .right{
+    width: 380px;
+    line-height: 56px;
+    color:#3F5D45;
+    background-color: #EAF0ED;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right i{font-size: 24px;}
+.right .mailicon{margin: 16px 20px;}
+
+.right input[type="text"]{
+    font-size: 24px;
+    border: 0;
+    background-color: #EAF0ED;
+    width: 250px;
+}
+
+.right button{
+    width: 64px;
+    height: 56px;
+    background-color: #FFE180;
+    border: 0px;
+    color:#3F5D45;
+    cursor: pointer;
+}
+
+
+.lightbg{background: #EAF0ED;}
+
+.information{padding: 30px 0px;}
+
+.information img {margin-top: 8px;}
+
+.information .contact{
+    margin-top: 115px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.information .linefb{margin-top:30px;}
+
+.linefb img{
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
+
+.information .flex-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flex-block .text{
+    writing-mode: vertical-rl; /*文字直向*/
+    color:#3F5D45;
+    font-weight: bold;
+    font-size: 24px; 
+    line-height: 1.5;
+    letter-spacing: 3px;
+}
