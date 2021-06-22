@@ -222,6 +222,7 @@ img{
     display: flex;
     align-items: center;
 }
+
 .col-1 img{margin-right: 20px;}
 
 .mail > .col-2{
