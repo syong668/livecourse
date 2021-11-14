@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 18px;
+}
+
+body {
+  background: #fafafa;
+}
+
+.box {
+  max-width: 1440px;
+  height: 100vh;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box .sidebar {
+  width: 354px;
+  height: 100vh;
+  -webkit-box-shadow: 0px 14px 24px 0px #0000000a;
+          box-shadow: 0px 14px 24px 0px #0000000a;
+  padding: 40px 24px;
+}
+
+.box .sidebar .filter {
+  border-bottom: 1px solid #00000014;
+}
+
+.box .sidebar .filter a {
+  margin-bottom: 24px;
+  display: inline-block;
+}
+
+.box .sidebar .filter a h1 {
+  background-image: url(../img/LOGO.svg);
+  width: 116.5px;
+  height: 47px;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.box .sidebar .filter .local {
+  position: relative;
+}
+
+.box .sidebar .filter .local .search {
+  cursor: pointer;
+}
+
+.box .sidebar .filter .local .region {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-shadow: 0px 14px 24px 0px #0000000a;
+          box-shadow: 0px 14px 24px 0px #0000000a;
+  padding-bottom: 12px;
+  position: absolute;
+  width: 306px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  top: 43px;
+}
+
+.box .sidebar .filter .local .region span {
+  padding: 4px 16px;
+  margin: 12px 14px 0px 14px;
+  border-radius: 8px;
+  border: 1px solid #3fb195;
+}
+
+.box .sidebar .filter .local .region span:hover {
+  background-color: #3fb195;
+  color: #fff;
+  cursor: pointer;
+}
+
+.box .sidebar .filter .search {
+  margin-bottom: 24px;
+  width: 306px;
+  height: 43px;
+  background-color: #f4f4f4;
+  border: 1px solid #00000014;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 14px;
+}
+
+.box .sidebar .filter .search input {
+  background: #f4f4f4;
+  border: 0px;
+  width: 100%;
+  outline: none;
+}
+
+.box .sidebar .theme {
+  margin: 24px 0px;
+}
+
+.box .sidebar .theme h6 {
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.box .sidebar .theme ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.box .sidebar .theme ul li {
+  width: 50%;
+  margin-bottom: 28px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 0px;
+  border: 1px solid #fafafa;
+}
+
+.box .sidebar .theme ul li:hover {
+  border: 1px solid #3fb195;
+}
+
+.box .sidebar .theme ul li:nth-child(1) div {
+  background-color: #3fb195;
+}
+
+.box .sidebar .theme ul li:nth-child(2) div {
+  background-color: #c499ff;
+}
+
+.box .sidebar .theme ul li:nth-child(3) div {
+  background-color: #ff9999;
+}
+
+.box .sidebar .theme ul li:nth-child(4) div {
+  background-color: #64c5e3;
+}
+
+.box .sidebar .theme ul li:nth-child(5) div {
+  background-color: #81a4ff;
+}
+
+.box .sidebar .theme ul li:nth-child(6) div {
+  background-color: #fd975e;
+}
+
+.box .sidebar .theme ul li:nth-child(7) div {
+  background-color: #c17b53;
+}
+
+.box .sidebar .theme ul li:nth-child(8) div {
+  background-color: #8fca6b;
+}
+
+.box .sidebar .theme ul li div {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box .sidebar .theme ul li div i {
+  color: #fff;
+  font-size: 46px;
+}
+
+.box .main {
+  max-width: 1086px;
+  padding: 24px;
+}
+
+.box .main .banner {
+  height: 335px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 14px 24px 0px #0000000a;
+          box-shadow: 0px 14px 24px 0px #0000000a;
+  border-radius: 16px;
+}
+/*# sourceMappingURL=taiwan.css.map */
