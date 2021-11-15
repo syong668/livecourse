@@ -1,4 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap");
+.theme_color1 {
+  background-color: #3fb195;
+}
+
+.theme_color2 {
+  background-color: #c499ff;
+}
+
+.theme_color3 {
+  background-color: #ff9999;
+}
+
+.theme_color4 {
+  background-color: #64c5e3;
+}
+
+.theme_color5 {
+  background-color: #81a4ff;
+}
+
+.theme_color6 {
+  background-color: #fd975e;
+}
+
+.theme_color7 {
+  background-color: #c17b53;
+}
+
+.theme_color8 {
+  background-color: #8fca6b;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -12,7 +44,6 @@ body {
 
 .box {
   max-width: 1440px;
-  height: 100vh;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21,7 +52,6 @@ body {
 
 .box .sidebar {
   width: 354px;
-  height: 100vh;
   -webkit-box-shadow: 0px 14px 24px 0px #0000000a;
           box-shadow: 0px 14px 24px 0px #0000000a;
   padding: 40px 24px;
@@ -127,7 +157,15 @@ body {
   padding: 0;
 }
 
-.box .sidebar .theme ul li {
+.box .sidebar .theme ul input {
+  display: none;
+}
+
+.box .sidebar .theme ul input:checked + label {
+  border: 1px solid #3fb195;
+}
+
+.box .sidebar .theme ul label {
   width: 50%;
   margin-bottom: 28px;
   border-radius: 8px;
@@ -146,43 +184,11 @@ body {
   border: 1px solid #fafafa;
 }
 
-.box .sidebar .theme ul li:hover {
+.box .sidebar .theme ul label:hover {
   border: 1px solid #3fb195;
 }
 
-.box .sidebar .theme ul li:nth-child(1) div {
-  background-color: #3fb195;
-}
-
-.box .sidebar .theme ul li:nth-child(2) div {
-  background-color: #c499ff;
-}
-
-.box .sidebar .theme ul li:nth-child(3) div {
-  background-color: #ff9999;
-}
-
-.box .sidebar .theme ul li:nth-child(4) div {
-  background-color: #64c5e3;
-}
-
-.box .sidebar .theme ul li:nth-child(5) div {
-  background-color: #81a4ff;
-}
-
-.box .sidebar .theme ul li:nth-child(6) div {
-  background-color: #fd975e;
-}
-
-.box .sidebar .theme ul li:nth-child(7) div {
-  background-color: #c17b53;
-}
-
-.box .sidebar .theme ul li:nth-child(8) div {
-  background-color: #8fca6b;
-}
-
-.box .sidebar .theme ul li div {
+.box .sidebar .theme ul label div {
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -197,21 +203,51 @@ body {
           align-items: center;
 }
 
-.box .sidebar .theme ul li div i {
+.box .sidebar .theme ul label div i {
   color: #fff;
   font-size: 46px;
 }
 
 .box .main {
-  max-width: 1086px;
+  width: 100%;
   padding: 24px;
 }
 
 .box .main .banner {
   height: 335px;
+  padding-left: 40px;
   background-color: #fff;
   -webkit-box-shadow: 0px 14px 24px 0px #0000000a;
           box-shadow: 0px 14px 24px 0px #0000000a;
   border-radius: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.box .main .banner div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.box .main .banner div span {
+  display: block;
+  font-size: 58px;
+  font-weight: 700 bold;
+}
+
+.box .main .banner img {
+  max-width: 100%;
 }
 /*# sourceMappingURL=taiwan.css.map */
