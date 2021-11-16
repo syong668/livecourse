@@ -244,10 +244,36 @@ body {
 .box .main .banner div span {
   display: block;
   font-size: 58px;
-  font-weight: 700 bold;
+  font-weight: bold;
 }
 
 .box .main .banner img {
   max-width: 100%;
+}
+
+.box .main .theme_box {
+  margin-top: 40px;
+}
+
+.box .main .theme_box .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box .main .theme_box .title h6 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.box .main .theme_box .title span {
+  color: #3fb195;
+  font-size: 16px;
 }
 /*# sourceMappingURL=taiwan.css.map */
