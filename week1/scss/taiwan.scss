@@ -45,7 +45,7 @@ body {
     background: $bg-gray;
 }
 .box {
-    max-width: 1440px;
+    max-width: 1470px;
     margin: 0 auto;
     display: flex;
 
@@ -203,13 +203,69 @@ body {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                h6 {
+                h5 {
                     font-size: 24px;
                     font-weight: bold;
                 }
                 span {
                     color: $main_primary;
                     font-size: 16px;
+                }
+            }
+
+            .card_box {
+                display: flex;
+                flex-wrap: wrap;
+                .local_card {
+                    width: 330px;
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    background-color: $bg-white;
+                    box-shadow: 0px 14px 24px 0px #0000000a;
+                    border-radius: 16px;
+                    overflow: hidden;
+                    margin: 8px 12px;
+                    h6 {
+                        font-size: 18px;
+                        font-weight: bold;
+                        overflow: hidden;
+                        text-overflow: ellipsis; //文字溢出時「...」顯示
+                        white-space: nowrap; //強制不換行
+                    }
+
+                    .info {
+                        display: flex;
+                        flex-wrap: wrap;
+                        font-size: 14px;
+                        color: #00000099;
+                        div {
+                            display: flex;
+                            align-items: center;
+                            span {
+                                margin: 0px 16px 0px 4px;
+                            }
+                        }
+                    }
+                    .share_link {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 0px;
+                        position: absolute;
+                        width: 40px;
+                        height: 40px;
+                        right: 12px;
+                        top: 12px;
+                        background-color: #3fb19533;
+                        border-radius: 12px;
+                    }
+
+                    //調整位置用
+                    .mgse {
+                        margin: 8px 16px;
+                    }
                 }
             }
         }
