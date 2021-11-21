@@ -1,0 +1,339 @@
+.theme_color1 {
+    background-color: $main_primary;
+}
+.theme_color2 {
+    background-color: #c499ff;
+}
+.theme_color3 {
+    background-color: #ff9999;
+}
+.theme_color4 {
+    background-color: #64c5e3;
+}
+.theme_color5 {
+    background-color: #81a4ff;
+}
+.theme_color6 {
+    background-color: #fd975e;
+}
+.theme_color7 {
+    background-color: #c17b53;
+}
+.theme_color8 {
+    background-color: #8fca6b;
+}
+
+// div {
+//     border: 1px solid red;
+// }
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 18px;
+}
+body {
+    background: $bg-gray;
+}
+.box {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    
+    .sidebar {
+        position: sticky;
+        top: 0px;
+        width: 35%;
+        height: 100vh;
+        box-shadow: 0px 14px 24px 0px #0000000a;
+        padding: 24px;
+        overscroll-behavior: contain;
+        overflow-y:auto;
+        overflow-x:hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .filter {
+            width: 100%;
+            border-bottom: 1px solid $black_light8;
+            a {
+                margin-bottom: 24px;
+                display: inline-block;
+                h1 {
+                    background-image: url(../img/LOGO.svg);
+                    width: 116.5px;
+                    height: 47px;
+                    text-indent: 101%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+            }
+
+            .local {
+                position: relative;
+                .search {
+                    cursor: pointer;
+                }
+                .region {
+                    display: flex;
+                    flex-wrap: wrap;
+                    box-shadow: 0px 14px 24px 0px #0000000a;
+                    padding-bottom: 12px;
+                    position: absolute;
+                    background-color: $bg-white;
+                    border-radius: 8px;
+                    top: 43px;
+
+                    span {
+                        padding: 4px 16px;
+                        margin: 12px 14px 0px 14px;
+                        border-radius: 8px;
+                        border: 1px solid $main_primary;
+                        &:hover {
+                            background-color: $main_primary;
+                            color: #fff;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            .search {
+                margin-bottom: 24px;
+                height: 43px;
+                background-color: $bg-search;
+                border: 1px solid $black_light8;
+                border-radius: 8px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0px 14px;
+                input {
+                    background: $bg-search;
+                    border: 0px;
+                    width: 100%;
+                    outline: none;
+                }
+            }
+        }
+
+        .theme {
+            margin-top: 24px;
+            h6 {
+                font-weight: bold;
+            }
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                list-style: none;
+                padding: 0;
+
+                input {
+                    display: none;
+                    &:checked + label {
+                        border: 1px solid $main_primary;
+                    }
+                }
+
+                label {
+                    width: 50%;
+                    margin-top: 24px;
+                    border-radius: 8px;
+                    cursor: pointer;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 8px 0px;
+                    border: 1px solid $bg-gray;
+                    &:hover {
+                        border: 1px solid $main_primary;
+                    }
+
+                    div {
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        i {
+                            color: #fff;
+                            font-size: 46px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .search_btn {
+            background-color: $main_primary;
+            color: $bg-white;
+            width: 100%;
+        }
+    }
+
+
+    .main{
+
+        .main_content {
+
+            padding: 24px 24px 0px 24px;
+            .banner {
+                height: 335px;
+                padding-left: 40px;
+                background-color: #fff;
+                box-shadow: 0px 14px 24px 0px #0000000a;
+                border-radius: 16px;
+                display: flex;
+                justify-content: space-between;
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    span {
+                        display: block;
+                        font-size: 58px;
+                        font-weight: bold;
+                    }
+                }
+    
+                img {
+                    max-width: 100%;
+                }
+            }
+    
+            .theme_box {
+                margin-top: 40px;
+                .title {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    h5 {
+                        font-size: 24px;
+                        font-weight: bold;
+                    }
+                    span {
+                        color: $main_primary;
+                        font-size: 16px;
+                        cursor: pointer;
+                    }
+                }
+    
+                .card_box {
+                    display: flex;
+                    flex-wrap: wrap;
+                    max-width: 100%;
+                    .local_card {
+                        width:30%;
+                        display: flex;
+                        flex-direction: column;
+                        position: relative;
+                        background-color: $bg-white;
+                        box-shadow: 0px 14px 24px 0px #0000000a;
+                        border-radius: 16px;
+                        overflow: hidden;
+                        margin: 8px 12px;
+                        h6 {
+                            font-size: 18px;
+                            font-weight: bold;
+                            overflow: hidden;
+                            text-overflow: ellipsis; //文字溢出時「...」顯示
+                            white-space: nowrap; //強制不換行
+                        }
+    
+                        .info {
+                            display: flex;
+                            flex-wrap: wrap;
+                            color: #00000099;
+                            div {
+                                display: flex;
+                                align-items: center;
+                                span {
+                                    margin: 0px 16px 0px 4px;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                        .share_link {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 0px;
+                            position: absolute;
+                            width: 40px;
+                            height: 40px;
+                            right: 12px;
+                            top: 12px;
+                            background-color: #3fb19533;
+                            border-radius: 12px;
+                        }
+    
+                        //調整位置用
+                        .mgse {
+                            margin: 8px 16px;
+                        }
+    
+                        //改為直向用
+                        .flex_column {
+                            flex-direction: column;
+                        }
+
+                        //滑入時樣式
+                        &:hover{
+                            cursor: pointer;
+                            box-shadow: 0px 0px 14px 0px #b6b6b6;
+                            transition: .3s;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer {
+            margin-top: 80px;
+            padding: 8px 24px;
+            background-color: $main_primary;
+            display: flex;
+            justify-content: space-between;
+            .font_style{
+                font-size: 14px;
+                color:$bg-white;
+            }            
+        }
+    }
+
+}
+//捲軸底色
+.sidebar::-webkit-scrollbar-track {
+    background-color: $bg-gray;
+}
+
+//捲軸寬度
+.sidebar::-webkit-scrollbar{
+    width: 6px;
+}
+
+//捲軸本體顏色
+.sidebar::-webkit-scrollbar-thumb{
+    background-color: lighten(grey,30%);
+    border-radius: 10px;
+}
+//捲軸底色
+body::-webkit-scrollbar-track {
+    background-color: $bg-gray;
+}
+
+//捲軸寬度
+body::-webkit-scrollbar{
+    width: 6px;
+}
+
+//捲軸本體顏色
+body::-webkit-scrollbar-thumb{
+    background-color: lighten(grey,30%);
+    border-radius: 10px;
+}
